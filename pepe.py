@@ -36,8 +36,8 @@ def enviar_mensaje_linea4(mensaje,IP_DESTINO,PUERTO_DESTINO):
     sock.close()
 
 def activar_rele(pin_rele):
-    print(f"Esperando 3 segundos antes de activar el relé en el pin {pin_rele}")
-    time.sleep(3)
+    print(f"Esperando 2 segundos antes de activar el relé en el pin {pin_rele}")
+    time.sleep(2)
     print(f"Activando relé en pin {pin_rele} por 1 segundo")
     GPIO.output(pin_rele, GPIO.LOW)
     time.sleep(1)
