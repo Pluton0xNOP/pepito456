@@ -51,7 +51,7 @@ def controlar_rele1():
             time.sleep(0.05)
             if GPIO.input(RECEPTOR1_PIN) == GPIO.HIGH:
                 print("Se activó la señal en Receptor 1, activando relé 1")
-                enviar_mensaje_linea('linea2','192.168.101.58',12345)
+                enviar_mensaje_linea('linea2','192.168.101.37',12345)
                 time.sleep(0.5)
                 activar_rele(RELAY1_PIN)
 
@@ -64,7 +64,7 @@ def controlar_rele2():
             time.sleep(0.05)
             if GPIO.input(RECEPTOR2_PIN) == GPIO.HIGH:
                 print("Se activó la señal en Receptor 2, activando relé 2")
-                enviar_mensaje_linea('linea1','192.168.101.35',12345)
+                enviar_mensaje_linea('linea1','192.168.101.52',12345)
                 time.sleep(0.5)
                 activar_rele(RELAY2_PIN)
 
